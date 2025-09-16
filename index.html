@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexShop | Modern E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="External_Css/Style.css">
+    <style> 
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <input type="checkbox" id="nav-toggle" hidden>
+            
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">NexShop</div>
+            </div>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-actions">
+                    <a href="Login.html"><button>Login</button></a>
+                    <a href="Register.html"><button>Register</button></a>
+                </div>
+
+                <label for="nav-toggle" class="mobile-nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
+                    <li><a href="Deals.html">Deals</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-search">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-user-actions">
+                <a href="Login.html"><button>Login</button></a>
+                <a href="Register.html"><button>Register</button></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Summer Sale: Up to 50% Off</h1>
+            <p>Discover the latest products with exclusive discounts and free shipping on all orders. Limited time offer!</p>
+            <button class="cta-button">Shop Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <div class="container">
+        <section class="categories">
+            <div class="section-title">
+                <h2>Shop by Category</h2>
+                <p>Explore our wide range of product categories</p>
+            </div>
+            <div class="categories-container">
+                <div class="category-card">
+                    <i class="fas fa-laptop category-icon"></i>
+                    <h3>Electronics</h3>
+                    <p>Latest gadgets and devices</p>
+                    <a href="Electronics.html" class="category-link">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-tshirt category-icon"></i>
+                    <h3>Fashion</h3>
+                    <p>Trendy clothes and accessories</p>
+                    <a href="Fashion.html" class="category-link">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-couch category-icon"></i>
+                    <h3>Home & Garden</h3>
+                    <p>Furniture and decor items</p>
+                    <a href="HomeGarden.html" class="category-link">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heartbeat category-icon"></i>
+                    <h3>Health & Beauty</h3>
+                    <p>Products for your wellness</p>
+                    <a href="HealthBeauty.html" class="category-link">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>Bestselling and popular items</p>
+            </div>
+            <div class="products-container">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="product-badge">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Headphones" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <div class="product-price">₹10,999 <span class="old-price">₹13,499</span></div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smart Watch" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Watch</h3>
+                        <div class="product-price">₹15,499</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <span class="product-badge">New</span>
+                    <img src="https://cdn.xingosoftware.com/audioxpress/images/fetch/dpr_1,w_765,h_574,c_fit/https%3A%2F%2Faudioxpress.com%2Fassets%2Fupload%2Fimages%2F1%2F20200930103702_Amazon-Echo-2020-FamilyNologoWeb.jpg" alt="Smart Speaker" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Speaker</h3>
+                        <div class="product-price">₹6,999</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sports Shoes" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Sports Shoes</h3>
+                        <div class="product-price">₹5,999 <span class="old-price">₹7,499</span></div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://t4.ftcdn.net/jpg/05/85/92/23/360_F_585922306_JgV2vHGdV70y2x8UUV4atPzyabG5N2Cw.jpg" alt="Laptop" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Gaming Laptop</h3>
+                        <div class="product-price">₹74,999 <span class="old-price">₹89,999</span></div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://t4.ftcdn.net/jpg/02/94/17/89/360_F_294178954_DUubQbyFscd8JYeTeT8oYhXCh5a1PZSS.jpg" alt="Camera" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">DSLR Camera</h3>
+                        <div class="product-price">₹45,499 <span class="old-price">₹52,999</span></div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="special-offers">
+            <div class="section-title">
+                <h2>Special Offers</h2>
+                <p>Limited time deals you don't want to miss</p>
+            </div>
+            <div class="offers-container">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Special Offer 1">
+                    <div class="offer-content">
+                        <h3>Summer Collection</h3>
+                        <p>Up to 40% off on selected items</p>
+                        <button class="cta-button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.cnbctv18.com/wp-content/uploads/2022/09/Apple.jpg?impolicy=website&width=400&height=225" alt="Special Offer 2">
+                    <div class="offer-content">
+                        <h3>Electronics Sale</h3>
+                        <p>Latest gadgets with amazing discounts</p>
+                        <button class="cta-button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1605733513597-a8f8341084e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Special Offer 3">
+                    <div class="offer-content">
+                        <h3>New Arrivals</h3>
+                        <p>Be the first to get our newest products</p>
+                        <button class="cta-button">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+         
+        <!-- Services Section -->
+         <!-- comment
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide excellent services for our customers</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-shipping-fast service-icon"></i>
+                    <h3 class="service-title">Free Shipping</h3>
+                    <p class="service-description">Free shipping on all orders over ₹999</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-1">
+                    <i class="fas fa-undo service-icon"></i>
+                    <h3 class="service-title">Easy Returns</h3>
+                    <p class="service-description">30-day money back guarantee</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-2">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h3 class="service-title">Secure Payment</h3>
+                    <p class="service-description">All transactions are secure and encrypted</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-3">
+                    <i class="fas fa-headset service-icon"></i>
+                    <h3 class="service-title">24/7 Support</h3>
+                    <p class="service-description">Dedicated support team for all your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>-->  
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>See what our customers are saying</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"I've been shopping with NexShop for over a year now and I'm always impressed with their product quality and customer service. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-details">
+                            <h4>Sarah Johnson</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The delivery was super fast and the product was exactly as described. I'll definitely be shopping here again soon!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="author-details">
+                            <h4>Michael Chen</h4>
+                            <p>First-time Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Their customer support team went above and beyond to help me with my order. It's rare to find such great service these days!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emma Rodriguez">
+                        </div>
+                        <div class="author-details"> 
+                            <h4>Emma Rodriguez</h4> <p>Loyal Customer</p>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </section>
+    </div>
+    
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>From Our Blog</h2>
+                <p>Latest news and articles</p>
+            </div>
+            <div class="blog-container">
+                <div class="blog-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Trends" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">April 15, 2025</div>
+                        <h3 class="blog-title">Top Tech Trends to Watch in 2025</h3>
+                        <p class="blog-excerpt">Discover the latest technology trends that are shaping our future and changing how we live and work.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card animate-on-scroll delay-1">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion Tips" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">Feb 10, 2025</div>
+                        <h3 class="blog-title">Summer Fashion Essentials</h3>
+                        <p class="blog-excerpt">Stay cool and stylish this summer with our carefully curated selection of must-have fashion items.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card animate-on-scroll delay-2">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Home Decor" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">June 5, 2025</div>
+                        <h3 class="blog-title">Minimalist Home Decor Ideas</h3>
+                        <p class="blog-excerpt">Transform your living space with these simple yet effective minimalist home decor ideas and tips.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products, special offers, and exclusive discounts.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>NexShop</h3>
+                <p>Your one-stop destination for all your shopping needs. We offer quality products at affordable prices with excellent customer service.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="Categories.html">Categories</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> 8, Yashoda Nagar, Jaitala Road, NAgpur</li>
+                    <li><i class="fas fa-phone"></i> +91-9876543210</li>
+                    <li><i class="fas fa-envelope"></i> support@nexshop.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NexShop. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--secondary);"></i></p>
+        </div>
+    </footer>
+</body>
+</html>

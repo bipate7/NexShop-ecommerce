@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | NexShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="External_Css/Categorie.css">
+    <style>
+        /* Animation trigger with CSS only */
+        .animate-on-scroll {
+            animation: fadeInUp 1s forwards;
+            animation-delay: calc(var(--scroll-delay, 0) * 0.1s);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Add slight delays for staggered animation */
+        .delay-1 { --scroll-delay: 1; }
+        .delay-2 { --scroll-delay: 2; }
+        .delay-3 { --scroll-delay: 3; }
+        .delay-4 { --scroll-delay: 4; }
+        .delay-5 { --scroll-delay: 5; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shopping-bag"></i>NexShop
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Deals.html">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                <form class="search-form me-3">
+                    <input type="text" class="form-control rounded-pill ps-3" placeholder="Search products...">
+                    <button class="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="categories-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold mb-3">Explore Our Categories</h1>
+                    <p class="lead">Discover a wide range of products organized into carefully curated categories for easy shopping</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="py-3 bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Categories</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <!-- Categories Grid -->
+        <section class="mb-5">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-3">Shop by Category</h2>
+                    <p class="text-muted">Browse through our extensive collection of products organized into categories</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Category 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card animate-on-scroll">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1468436139062-f60a71c5c892?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Electronics">
+                            <div class="category-overlay">
+                                <h3 class="text-white mb-0">Electronics</h3>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Electronics</h3>
+                            <p class="text-muted">Latest gadgets, smartphones, laptops, and cutting-edge technology</p>
+                            <div class="category-stats">
+                                <span><i class="fas fa-boxes me-1"></i> 1,240 products</span>
+                                <span><i class="fas fa-star me-1"></i> 4.8/5 rating</span>
+                            </div>
+                            <a href="#" class="category-link">Explore Electronics <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card animate-on-scroll delay-1">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fashion">
+                            <div class="category-overlay">
+                                <h3 class="text-white mb-0">Fashion</h3>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Fashion</h3>
+                            <p class="text-muted">Trendy clothing, shoes, accessories for men, women and children</p>
+                            <div class="category-stats">
+                                <span><i class="fas fa-boxes me-1"></i> 3,450 products</span>
+                                <span><i class="fas fa-star me-1"></i> 4.7/5 rating</span>
+                            </div>
+                            <a href="#" class="category-link">Explore Fashion <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card animate-on-scroll delay-2">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Home & Garden">
+                            <div class="category-overlay">
+                                <h3 class="text-white mb-0">Home & Garden</h3>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Home & Garden</h3>
+                            <p class="text-muted">Furniture, decor, kitchenware, and everything for your living space</p>
+                            <div class="category-stats">
+                                <span><i class="fas fa-boxes me-1"></i> 2,180 products</span>
+                                <span><i class="fas fa-star me-1"></i> 4.9/5 rating</span>
+                            </div>
+                            <a href="#" class="category-link">Explore Home & Garden <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card animate-on-scroll delay-3">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Health & Beauty">
+                            <div class="category-overlay">
+                                <h3 class="text-white mb-0">Health & Beauty</h3>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Health & Beauty</h3>
+                            <p class="text-muted">Skincare, makeup, wellness products and personal care items</p>
+                            <div class="category-stats">
+                                <span><i class="fas fa-boxes me-1"></i> 1,870 products</span>
+                                <span><i class="fas fa-star me-1"></i> 4.8/5 rating</span>
+                            </div>
+                            <a href="#" class="category-link">Explore Health & Beauty <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card animate-on-scroll delay-4">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sports & Outdoors">
+                            <div class="category-overlay">
+                                <h3 class="text-white mb-0">Sports & Outdoors</h3>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Sports & Outdoors</h3>
+                            <p class="text-muted">Equipment, apparel and gear for sports, fitness and outdoor activities</p>
+                            <div class="category-stats">
+                                <span><i class="fas fa-boxes me-1"></i> 1,520 products</span>
+                                <span><i class="fas fa-star me-1"></i> 4.6/5 rating</span>
+                            </div>
+                            <a href="#" class="category-link">Explore Sports & Outdoors <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card animate-on-scroll delay-5">
+                        <div class="category-img">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Toys & Games">
+                            <div class="category-overlay">
+                                <h3 class="text-white mb-0">Toys & Games</h3>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h3 class="category-title">Toys & Games</h3>
+                            <p class="text-muted">Educational toys, games, and entertainment for all ages</p>
+                            <div class="category-stats">
+                                <span><i class="fas fa-boxes me-1"></i> 980 products</span>
+                                <span><i class="fas fa-star me-1"></i> 4.9/5 rating</span>
+                            </div>
+                            <a href="#" class="category-link">Explore Toys & Games <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Products -->
+        <section class="mb-5">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-3">Popular in Categories</h2>
+                    <p class="text-muted">Check out these trending products across different categories</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card animate-on-scroll">
+                        <div class="product-img position-relative">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wireless Headphones">
+                            <span class="product-badge">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wireless Headphones</h3>
+                            <div class="product-price">₹10,999 <span class="old-price">₹13,499</span></div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card animate-on-scroll delay-1">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Smart Watch">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smart Watch</h3>
+                            <div class="product-price">₹15,499</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card animate-on-scroll delay-2">
+                        <div class="product-img position-relative">
+                            <img src="https://www.cnet.com/a/img/resize/a55d40f49697cc72fa6ecf5c2463f2997297d90d/hub/2020/10/21/a532eddf-2122-4ca0-bc56-539295329d2b/amazon-echo-2020-2.jpg?auto=webp&height=500" alt="Smart Speaker">
+                            <span class="product-badge">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smart Speaker</h3>
+                            <div class="product-price">₹6,999</div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card animate-on-scroll delay-3">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sports Shoes">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sports Shoes</h3>
+                            <div class="product-price">₹5,999 <span class="old-price">₹7,499</span></div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Category Tips -->
+        <section class="bg-light rounded-3 p-5 animate-on-scroll">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Not Sure Where to Start?</h2>
+                    <p class="lead">Explore our buying guides and find the perfect products for your needs.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Detailed product comparisons</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Expert recommendations</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Buying guides for every budget</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Seasonal shopping advice</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Explore Buying Guides</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Shopping Guide" class="img-fluid rounded-3">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>NexShop</h3>
+                    <p>Your trusted partner for all your online shopping needs. Quality products, competitive prices, and exceptional service.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Deals</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping & Returns</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 08, Yashoda Nagar, Jaitala Road, Nagpur - 440036</li>
+                        <li><i class="fas fa-phone"></i> +91-9876543210</li>
+                        <li><i class="fas fa-envelope"></i> support@nexshop.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NexShop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (for navbar toggling) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Animation on scroll without JS (using CSS only) -->
+</body>
+</html>

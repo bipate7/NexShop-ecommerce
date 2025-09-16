@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | NexShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="External_Css/Product.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shopping-bag"></i>NexShop
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Deals.html">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                <form class="search-form me-3">
+                    <input type="text" class="form-control rounded-pill ps-3" placeholder="Search products...">
+                    <button class="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container py-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-4">
+        <div class="row">
+            <!-- Sidebar with Filters -->
+            <div class="col-lg-3">
+                <div class="filter-card card">
+                    <div class="card-header filter-header">
+                        <h5 class="filter-title"><i class="fas fa-filter me-2"></i>Filters</h5>
+                    </div>
+                    <div class="card-body filter-body">
+                        <h6>Categories</h6>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat1" checked>
+                                <label class="form-check-label" for="cat1">Electronics</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat2">
+                                <label class="form-check-label" for="cat2">Fashion</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat3">
+                                <label class="form-check-label" for="cat3">Home & Kitchen</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat4">
+                                <label class="form-check-label" for="cat4">Beauty</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat5">
+                                <label class="form-check-label" for="cat5">Sports</label>
+                            </div>
+                        </div>
+                        
+                        <h6>Price Range</h6>
+                        <div class="price-filter mb-3">
+                            <input type="range" class="form-range" id="priceRange" min="0" max="1000" value="500">
+                            <div class="d-flex justify-content-between">
+                                <span>₹0</span>
+                                <span>₹100,000</span>
+                            </div>
+                        </div>
+                        
+                        <h6>Brand</h6>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="brand1">
+                                <label class="form-check-label" for="brand1">Samsung</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="brand2" checked>
+                                <label class="form-check-label" for="brand2">Apple</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="brand3">
+                                <label class="form-check-label" for="brand3">Sony</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="brand4">
+                                <label class="form-check-label" for="brand4">Nike</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="brand5">
+                                <label class="form-check-label" for="brand5">Adidas</label>
+                            </div>
+                        </div>
+                        
+                        <h6>Rating</h6>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating5">
+                                <label class="form-check-label" for="rating5">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i> & Up
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating4" checked>
+                                <label class="form-check-label" for="rating4">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i> & Up
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="rating3">
+                                <label class="form-check-label" for="rating3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i> & Up
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-card card mt-4">
+                    <div class="card-body text-center">
+                        <h5>Summer Sale!</h5>
+                        <p>Up to 50% off on selected items</p>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+                
+                <!-- NEW CONTENT: Trending Products -->
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-fire me-2 text-danger"></i>Trending Products</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="trending-product">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&q=80" class="trending-img" alt="Running Shoes">
+                            <div class="trending-info">
+                                <div class="trending-title">Sports Running Shoes</div>
+                                <div class="trending-price">₹5,999</div>
+                            </div>
+                        </div>
+                        <div class="trending-product">
+                            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&q=80" class="trending-img" alt="Smartwatch">
+                            <div class="trending-info">
+                                <div class="trending-title">Smart Fitness Tracker</div>
+                                <div class="trending-price">₹15,499</div>
+                            </div>
+                        </div>
+                        <div class="trending-product">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&q=80" class="trending-img" alt="Headphones">
+                            <div class="trending-info">
+                                <div class="trending-title">Wireless Headphones</div>
+                                <div class="trending-price">₹10,999</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NEW CONTENT: Popular Brands -->
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-crown me-2 text-warning"></i>Popular Brands</h6>
+                    </div>
+                    <div class="card-body">
+                        <ul class="brand-list">
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Nike</a></li>
+                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">Adidas</a></li>
+                            <li><a href="#">View All Brands</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- NEW CONTENT: Customer Testimonials -->
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-star me-2 text-warning"></i>Customer Reviews</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="testimonial-text">
+                            "The headphones I bought exceeded my expectations. Great sound quality and comfortable to wear for hours!"
+                        </div>
+                        <div class="testimonial-author">- Rahul S.</div>
+                        
+                        <div class="testimonial-text mt-3">
+                            "Fast delivery and the product was exactly as described. Will definitely shop here again."
+                        </div>
+                        <div class="testimonial-author">- Priya M.</div>
+                    </div>
+                </div>
+                
+                <!-- NEW CONTENT: Services -->
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-truck me-2 text-success"></i>Our Services</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fas fa-shipping-fast"></i>
+                                    </div>
+                                    <div class="service-title">Free Shipping</div>
+                                    <div class="service-desc">On orders over ₹999</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fas fa-undo"></i>
+                                    </div>
+                                    <div class="service-title">Easy Returns</div>
+                                    <div class="service-desc">30-day policy</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="service-title">Secure Payment</div>
+                                    <div class="service-desc">Safe & encrypted</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <div class="service-title">24/7 Support</div>
+                                    <div class="service-desc">Dedicated support</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NEW CONTENT: Blog Posts -->
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-blog me-2 text-info"></i>From Our Blog</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="blog-post">
+                            <div class="blog-title">How to Choose the Right Headphones</div>
+                            <div class="blog-date">June 15, 2023</div>
+                        </div>
+                        <div class="blog-post">
+                            <div class="blog-title">Top 10 Fitness Gadgets for 2023</div>
+                            <div class="blog-date">May 28, 2023</div>
+                        </div>
+                        <div class="blog-post">
+                            <div class="blog-title">Summer Fashion Trends</div>
+                            <div class="blog-date">April 10, 2023</div>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary btn-sm mt-2 w-100">View All Articles</a>
+                    </div>
+                </div>
+                
+                <!-- NEW CONTENT: Social Media Stats
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-hashtag me-2 text-primary"></i>Join Our Community</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="social-stats">
+                            <div class="stat-item">
+                                <div class="stat-count">25K</div>
+                                <div class="stat-label">Followers</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-count">1.2M</div>
+                                <div class="stat-label">Likes</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-count">48K</div>
+                                <div class="stat-label">Shares</div>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- NEW CONTENT: Newsletter Subscription 
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-envelope me-2 text-danger"></i>Newsletter</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="small">Subscribe to get special offers, free giveaways, and new product alerts.</p>
+                        <form class="newsletter-form">
+                            <div class="mb-2">
+                                <input type="email" class="form-control" placeholder="Your email address">
+                            </div>
+                            <button type="submit" class="btn btn-primary newsletter-btn w-100">Subscribe</button>
+                        </form>
+                    </div>
+                </div>-->
+                
+                <!-- NEW CONTENT: Payment Methods 
+                <div class="sidebar-card card mt-4">
+                    <div class="card-header">
+                        <h6 class="mb-0"><i class="fas fa-credit-card me-2 text-success"></i>We Accept</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="payment-methods">
+                            <div class="payment-icon">Visa</div>
+                            <div class="payment-icon">MC</div>
+                            <div class="payment-icon">PayPal</div>
+                            <div class="payment-icon">UPI</div>
+                            <div class="payment-icon">Amazon Pay</div>
+                            <div class="payment-icon">GPay</div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            
+            <!-- Products Section -->
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="mb-0">All Products</h4>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <span class="me-2">Sort by:</span>
+                            <select class="form-select form-select-sm">
+                                <option>Featured</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Highest Rated</option>
+                                <option>Newest First</option>
+                            </select>
+                        </div>
+                        <div class="view-options btn-group">
+                            <button class="btn btn-outline-primary active">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="btn btn-outline-primary">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                    <!-- Product 37 -->
+                    <div class="col">
+                        <div class="product-card card">
+                            <div class="product-img-container">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZCW3oeMTG69ipjzOeCytrfJ8LopqXzwxLMg&s" class="product-img" alt="Gaming Laptop">
+                                <span class="product-badge badge bg-danger">Sale</span>
+                                <span class="product-badge badge category-badge" style="top:40px;">Electronics</span>
+                                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="product-title">ASUS ROG Strix Gaming Laptop</h5>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (3.9)
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">₹1,09,999</span>
+                                    <span class="original-price">₹1,29,999</span>
+                                    <span class="discount">-15%</span>
+                                </div>
+                                <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Product 38 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2hhtCyQxEmOVt7IbywP97zUEkeV8-8-fLxg&s" class="product-img" alt="Running Shoes">
+      <span class="product-badge badge category-badge">Fashion</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Adidas Ultraboost Running Shoes</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.2)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹8,499</span>
+        <span class="original-price">₹10,499</span>
+        <span class="discount">-19%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 39 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://cdn.decornation.in/wp-content/uploads/2020/03/solid-wood-dining-table-1.jpg" class="product-img" alt="Dining Table">
+      <span class="product-badge badge bg-info">Bestseller</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Home</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">6-Seater Wooden Dining Table</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (4.6)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹32,999</span>
+        <span class="original-price">₹39,999</span>
+        <span class="discount">-18%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 40 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://smarthomesounds.sirv.com/live-magento/sozo_imagify/51c2360b57eb092048a411cb97858c11/var/www_m2/smarthomesounds.co.uk/htdocs/wp/wp-content/uploads/2022/02/jbl-flip-6-review-blog-header.jpg" class="product-img" alt="Bluetooth Speaker">
+      <span class="product-badge badge category-badge">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">JBL Flip 6 Bluetooth Speaker</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.1)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹9,499</span>
+        <span class="original-price">₹11,999</span>
+        <span class="discount">-21%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 41 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://ifbdm.ifbappliances.com/adobe/assets/urn:aaid:aem:452a3b25-59f0-48fc-b788-3a33c70f894b" class="product-img" alt="Microwave Oven">
+      <span class="product-badge badge bg-success">New</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Kitchen</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">IFB Convection Microwave Oven</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (4.5)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹17,499</span>
+        <span class="original-price">₹20,999</span>
+        <span class="discount">-17%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 42 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202307/untitled_design_64-sixteen_nine.jpg?VersionId=b1QGwPsbpYw5aQy9a3AbhbRlm9R3IcmG&size=690:388" class="product-img" alt="Smartphone">
+      <span class="product-badge badge bg-danger">Sale</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">OnePlus Nord 3 5G Smartphone</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (3.8)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹29,499</span>
+        <span class="original-price">₹34,999</span>
+        <span class="discount">-16%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 43 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://www.sony.co.in/image/aecb44d1ed9d12d83c2736daa1786b75?fmt=png-alpha&wid=1014&hei=396" class="product-img" alt="Headphones">
+      <span class="product-badge badge bg-info">Bestseller</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Sony WH-1000XM4 Headphones</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.4)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹24,499</span>
+        <span class="original-price">₹29,999</span>
+        <span class="discount">-18%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 44 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://assets.nikshanonline.com/wp-content/uploads/2024/05/Samsung-7-KG-Front-Load-washing-machine-4.png" class="product-img" alt="Washing Machine">
+      <span class="product-badge badge bg-success">New</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Home Appliances</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">LG 7kg Front Load Washing Machine</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (4.3)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹31,999</span>
+        <span class="original-price">₹37,999</span>
+        <span class="discount">-16%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 45 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLW6L8CLI-7UbLpCF0LpukbcAwHb3nIe9obA&s" class="product-img" alt="Smartwatch">
+      <span class="product-badge badge category-badge">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Apple Watch SE (2nd Gen)</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.2)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹28,499</span>
+        <span class="original-price">₹33,999</span>
+        <span class="discount">-16%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 46 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://m.media-amazon.com/images/I/61stgInpefL._UY1100_.jpg" class="product-img" alt="Backpack">
+      <span class="product-badge badge bg-warning">Trending</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Fashion</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Wildcraft Large Laptop Backpack</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.1)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹2,999</span>
+        <span class="original-price">₹3,799</span>
+        <span class="discount">-21%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 47 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://jamesandco.in/wp-content/uploads/2024/09/f2dd9835-57c7-4b92-bbfb-26a6bbd17cb924280654-1.jpg" class="product-img" alt="Air Conditioner">
+      <span class="product-badge badge bg-danger">Sale</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Home Appliances</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Daikin 1.5 Ton Inverter AC</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.3)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹41,999</span>
+        <span class="original-price">₹49,999</span>
+        <span class="discount">-16%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 48 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://in.canon/media/image/2019/04/09/bd61bd3552524e8e8a7c006dd580c826_EOS+200D+MKII+BK+Front+Slant+w+Screen.png" class="product-img" alt="DSLR Camera">
+      <span class="product-badge badge bg-info">Bestseller</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Canon EOS 200D DSLR Camera</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (4.6)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹52,999</span>
+        <span class="original-price">₹59,999</span>
+        <span class="discount">-12%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 49 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://www.kamalwatch.com/cdn/shop/products/1170245-fossilmengrantchronographbrownleatheranalogwatch.jpg?v=1756104779" class="product-img" alt="Wrist Watch">
+      <span class="product-badge badge category-badge">Fashion</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Fossil Men's Chronograph Watch</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (3.9)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹11,499</span>
+        <span class="original-price">₹13,999</span>
+        <span class="discount">-18%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 50 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://www.zdnet.com/a/img/2022/06/03/f80050ad-d001-42b3-b52d-6ace8640dc62/samsung-galaxy-tab-s8-plus-hero.jpg" class="product-img" alt="Tablet">
+      <span class="product-badge badge bg-success">New</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Samsung Galaxy Tab S8</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.1)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹55,499</span>
+        <span class="original-price">₹62,999</span>
+        <span class="discount">-12%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 51 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://torqueindia.co/cdn/shop/files/joel-3-seater-manual-recliner-3-seater-recliner-sofa-604558.jpg?v=1750867269" class="product-img" alt="Sofa Set">
+      <span class="product-badge badge bg-warning">Trending</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Home</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">3-Seater Recliner Sofa Set</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> (4.0)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹39,999</span>
+        <span class="original-price">₹47,999</span>
+        <span class="discount">-17%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 52 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://downloadcenter.nikonimglib.com/image/view/5966cb19-0a34-485b-9ff9-7b030a804e06.png" class="product-img" alt="Camera Lens">
+      <span class="product-badge badge bg-info">Bestseller</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Electronics</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Nikon 70-300mm Telephoto Lens</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.3)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹25,999</span>
+        <span class="original-price">₹31,499</span>
+        <span class="discount">-17%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 53 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8da9755c-06c6-4bcb-b5f7-13a6b9b5dda4/AIR+MAX+DN+SE.png" class="product-img" alt="Sneakers">
+      <span class="product-badge badge bg-danger">Sale</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Fashion</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Nike Air Max Sneakers</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.2)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹7,499</span>
+        <span class="original-price">₹8,999</span>
+        <span class="discount">-17%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 54 -->
+<div class="col">
+  <div class="product-card card">
+    <div class="product-img-container">
+      <img src="https://dynamicdistributors.in/wp-content/uploads/2025/08/517Rar8F1nL._SL1000_-1.jpg" class="product-img" alt="Kitchen Chimney">
+      <span class="product-badge badge bg-success">New</span>
+      <span class="product-badge badge category-badge" style="top:40px;">Kitchen</span>
+      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+    </div>
+    <div class="card-body">
+      <h5 class="product-title">Elica 60cm Auto Clean Chimney</h5>
+      <div class="product-rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="far fa-star"></i> (4.4)
+      </div>
+      <div class="product-price">
+        <span class="current-price">₹12,999</span>
+        <span class="original-price">₹15,499</span>
+        <span class="discount">-16%</span>
+      </div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</button>
+    </div>
+  </div>
+</div>
+</div>
+                
+                <!-- Pagination -->
+                <nav class="d-flex justify-content-center mt-5">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="Product4.html" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="Products.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="Product2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="Product3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="Product4.html">4</a></li>
+                        <li class="page-item active"><a class="page-link" href="Product5.html">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="Products.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">NexShop</h5>
+                    <p>Your one-stop destination for all your shopping needs. We offer quality products at competitive prices with excellent customer service.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/i/flow/signup?"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://in.pinterest.com/login/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Shop</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Home & Kitchen</a></li>
+                        <li><a href="#">Beauty & Health</a></li>
+                        <li><a href="#">Sports & Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Customer Service</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates on new products, special offers, and discounts.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NexShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

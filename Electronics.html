@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Electronics | NexShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="External_Css/Electronics.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">NexShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Electronics.html">Electronics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Computers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Smart Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Deals.html">Deals</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-secondary me-2"><i class="fas fa-search"></i></a>
+                    <a href="#" class="btn btn-outline-secondary me-2 position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                    </a>
+                    <a href="Login.html" class="btn btn-primary"><i class="fas fa-user me-2"></i>Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Next-Gen Electronics</h1>
+            <p class="hero-subtitle">Discover cutting-edge technology and premium gadgets to elevate your digital lifestyle. From smartphones to smart home devices, we have everything you need.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Explore Now <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-card">
+                        <img src="https://www.cnet.com/a/img/resize/ed072c0d593c65b19fa35f85872fd2e7f3b3ffc8/hub/2025/01/22/93ca05dd-7f03-45e9-8fa1-72be6b203a5e/p1013321.jpg?auto=webp&width=327" alt="Smartphones">
+                        <div class="category-overlay">
+                            <h5>Smartphones</h5>
+                            <p class="mb-0">Latest models</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-card">
+                        <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/franchise/latitude/compact-design/fy25/lati-compact-franchise-1920x1440-fy25-mod-1.png?fmt=png-alpha&wid=1920&hei=1440" alt="Laptops">
+                        <div class="category-overlay">
+                            <h5>Laptops & Tablets</h5>
+                            <p class="mb-0">Powerful devices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-card">
+                        <img src="https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-siteCatalog_MULTI_US/default/dw23b557a9/categoryimage/Portables-Party-image.jpg?sw=800&sh=400" alt="Audio">
+                        <div class="category-overlay">
+                            <h5>Audio & Sound</h5>
+                            <p class="mb-0">Immersive sound</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="category-card">
+                        <img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202505/12/00110113519416____3__1200x1200.jpg" alt="Cameras">
+                        <div class="category-overlay">
+                            <h5>Cameras & Drones</h5>
+                            <p class="mb-0">Capture everything</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Flash Sale</h2>
+            <div class="deal-countdown">
+                <h3 class="mb-3">Hurry Up! Sale Ends In:</h3>
+                <div class="static-countdown">
+                    <div class="static-countdown-unit">
+                        <div class="static-countdown-value">02</div>
+                        <div class="static-countdown-label">Days</div>
+                    </div>
+                    <div class="static-countdown-unit">
+                        <div class="static-countdown-value">12</div>
+                        <div class="static-countdown-label">Hours</div>
+                    </div>
+                    <div class="static-countdown-unit">
+                        <div class="static-countdown-value">45</div>
+                        <div class="static-countdown-label">Minutes</div>
+                    </div>
+                    <div class="static-countdown-unit">
+                        <div class="static-countdown-value">30</div>
+                        <div class="static-countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="products">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-20%</span>
+                            <img src="https://images.hothardware.com/contentimages/article/3317/content/small_angle-view-1-apple-macbook-pro-16-m2-max-2023.jpg" alt="MacBook Pro" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">MacBook Pro 16" M2 Max</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128)</span>
+                            </div>
+                            <div>
+                                <span class="product-price">$2,999</span>
+                                <span class="product-old-price">$3,499</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-15%</span>
+                            <img src="https://m.media-amazon.com/images/I/71ta3jyFvIL._UF350,350_QL80_.jpg" alt="iPhone 14 Pro" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">iPhone 16 Pro Max 256GB</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(98)</span>
+                            </div>
+                            <div>
+                                <span class="product-price">₹3,29,900</span>
+                                <span class="product-old-price">₹3,49,900</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-30%</span>
+                            <img src="https://www.sony-asia.com/image/6539959b6c50b04c5cec4e23134c1137?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9" alt="Headphones" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">Sony WH-1000XM5 Headphones</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(247)</span>
+                            </div>
+                            <div>
+                                <span class="product-price">₹27,999</span>
+                                <span class="product-old-price">₹39,999</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-25%</span>
+                            <img src="https://www.imagineonline.store/cdn/shop/files/Apple_Watch_Series_8_GPS_41mm_Midnight_Aluminum_Midnight_Sport_Band_PDP_Image_Position-5__en-US.jpg?v=1699018157&width=823" alt="Smart Watch" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">Apple Watch Series 8</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(156)</span>
+                            </div>
+                            <div>
+                                <span class="product-price">₹30,800</span>
+                                <span class="product-old-price">₹40,500</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Why Choose NexShop</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4>Free Shipping</h4>
+                        <p>Free shipping on all orders over $50. Fast delivery to your doorstep within 2-5 business days.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Secure Payment</h4>
+                        <p>We offer secure payment options with 256-bit encryption. Your financial data is always protected.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <h4>Easy Returns</h4>
+                        <p>Not satisfied with your purchase? Return within 30 days for a full refund, no questions asked.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Our customer support team is available 24/7 to help you with any questions or concerns.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Authentic Products</h4>
+                        <p>We guarantee 100% authentic products from authorized dealers with manufacturer warranties.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h4>Best Prices</h4>
+                        <p>We offer the best prices on premium electronics with regular discounts and special offers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The shopping experience was fantastic! Fast shipping and the product was exactly as described. Will definitely shop here again.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Customer" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <small>Verified Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">I've been shopping with NexShop for over a year now and they never disappoint. Great prices and excellent customer service.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Michael Chen</h5>
+                                <small>Verified Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The product quality is exceptional and the delivery was super fast. I'm really impressed with their after-sales support too!</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Emma Rodriguez</h5>
+                                <small>Verified Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+                    <p class="mb-4">Stay updated with the latest products, exclusive offers, and tech news delivered straight to your inbox.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email" required>
+                            <button class="btn btn-newsletter" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-title">NexShop</h4>
+                    <p>Your premier destination for cutting-edge electronics and gadgets. We bring you the latest technology with exceptional service.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 08 Yashoda Nagar, Jaitala Road, Nagpur 440036</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope me-2"></i> support@nexshop.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NexShop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

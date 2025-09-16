@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexShop | Furniture & Decor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="External_Css/HomeGarden.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.shop">NexShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Furniture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Decor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Outdoor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lighting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sale</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-secondary me-2"><i class="fas fa-search"></i></a>
+                    <a href="#" class="btn btn-outline-secondary me-2"><i class="fas fa-heart"></i></a>
+                    <a href="#" class="btn btn-outline-secondary me-2 position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">3</span>
+                    </a>
+                    <a href="#" class="btn btn-primary"><i class="fas fa-user me-2"></i>Account</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Transform Your Space</h1>
+            <p class="hero-subtitle">Discover beautiful furniture and decor to create the home of your dreams. Quality pieces for every style and budget.</p>
+            <a href="#products" class="btn btn-primary btn-lg me-3">Shop Now</a>
+            <a href="#categories" class="btn btn-outline-light btn-lg">Explore</a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title" id="categories">Shop by Category</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Living Room">
+                        <div class="category-overlay">
+                            <h4>Living Room</h4>
+                            <p class="mb-0">Sofas, chairs & more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Bedroom">
+                        <div class="category-overlay">
+                            <h4>Bedroom</h4>
+                            <p class="mb-0">Beds, dressers & accessories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Dining Room">
+                        <div class="category-overlay">
+                            <h4>Dining Room</h4>
+                            <p class="mb-0">Tables, chairs & sets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title" id="products">Featured Products</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-20%</span>
+                            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Modern Sofa" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">Modern Fabric Sofa</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128)</span>
+                            </div>
+                            <div>
+                                <span class="product-price inr">42,999</span>
+                                <span class="product-old-price inr">54,999</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-15%</span>
+                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Coffee Table" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">Wooden Coffee Table</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(95)</span>
+                            </div>
+                            <div>
+                                <span class="product-price inr">14,499</span>
+                                <span class="product-old-price inr">16,999</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-25%</span>
+                            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Dining Chair" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">Upholstered Dining Chair</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(210)</span>
+                            </div>
+                            <div>
+                                <span class="product-price inr">7,999</span>
+                                <span class="product-old-price inr">9,999</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <span class="product-badge">-30%</span>
+                            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Floor Lamp" class="product-img">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="product-title">Modern Floor Lamp</h5>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(142)</span>
+                            </div>
+                            <div>
+                                <span class="product-price inr">6,499</span>
+                                <span class="product-old-price inr">8,999</span>
+                            </div>
+                            <a href="#" class="btn btn-add-to-cart mt-3"><i class="fas fa-shopping-cart me-2"></i>Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Free Shipping</h4>
+                        <p>Free delivery on orders over ₹4999</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <h4>Easy Returns</h4>
+                        <p>30-day hassle-free return policy</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Quality Guarantee</h4>
+                        <p>Premium quality furniture that lasts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The quality of the sofa I purchased exceeded my expectations. It's comfortable, stylish, and was delivered right on time!</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Customer" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Priya Sharma</h5>
+                                <small>Mumbai</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">I absolutely love my new dining set. The customer service was exceptional, and the quality is outstanding.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Rahul Kapoor</h5>
+                                <small>Delhi</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The bedroom furniture I ordered looks even better in person. The delivery was smooth and assembly was straightforward.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Neha Patel</h5>
+                                <small>Bangalore</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+                    <p class="mb-4">Get updates on new collections, exclusive offers, and interior design tips.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email">
+                            <button class="btn btn-newsletter" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="footer-title">NexShop</h4>
+                    <p>Your one-stop destination for quality furniture and home decor. We help you create spaces you'll love coming home to.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Living Room</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Dining Room</a></li>
+                        <li><a href="#">Home Office</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 08 Yashoda Nagar, Jaitala Road, Nagpur, 440036</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope me-2"></i> support@nexshop.com</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NexShop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
