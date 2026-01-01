@@ -1,0 +1,251 @@
+/* Extracted styles from Deals.html */
+:root {
+  --primary: #4a6cf7;
+  --secondary: #ff6b6b;
+  --accent: #ff9f43;
+  --dark: #1d2a3a;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --success: #28a745;
+  --border: #e9ecef;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+  background-color: #f9fafc;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+/* Header Styles */
+.navbar {
+  background: linear-gradient(to right, var(--primary), #6a8eff);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-brand i {
+  color: #ffcc00;
+  margin-right: 10px;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: var(--transition);
+  position: relative;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+
+.search-form {
+  position: relative;
+  max-width: 300px;
+}
+
+/* Countdown Timer */
+.countdown {
+  background: linear-gradient(135deg, var(--secondary), #ff8585);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.countdown-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: relative;
+}
+.countdown-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.countdown-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Flash sales and product cards */
+.flash-sales {
+  padding: 4rem 0;
+  background-color: #fff8f8;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.section-title h2 {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+}
+.section-title p {
+  color: var(--gray);
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+  position: relative;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+.product-img {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-img img {
+  transform: scale(1.1);
+}
+.product-info {
+  padding: 1.5rem;
+}
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+}
+.product-card:hover .product-title {
+  color: var(--primary);
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.current-price {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+.old-price {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+.discount {
+  color: var(--accent);
+  font-weight: 700;
+}
+.progress {
+  height: 8px;
+  background: #f1f1f1;
+  border-radius: 100px;
+  overflow: hidden;
+  margin: 0.75rem 0;
+}
+.progress-text {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .product-img {
+    height: 160px;
+  }
+}
+
+/* Footer tweaks */
+.footer-title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+.footer-contact li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "p1",
+    "title": "Wireless Headphones",
+    "price": 10999,
+    "priceHTML": "₹10,999 <span class=\"old-price\">₹13,499</span>",
+    "rating": 4,
+    "badge": "Sale",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": "p2",
+    "title": "Smart Watch",
+    "price": 15499,
+    "priceHTML": "₹15,499",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+  },
+  {
+    "id": "p3",
+    "title": "Smart Speaker",
+    "price": 6999,
+    "priceHTML": "₹6,999",
+    "rating": 4,
+    "badge": "New",
+    "image": "https://cdn.xingosoftware.com/audioxpress/images/fetch/dpr_1,w_765,h_574,c_fit/https%3A%2F%2Faudioxpress.com%2Fassets%2Fupload%2Fimages%2F1%2F20200930103702_Amazon-Echo-2020-FamilyNologoWeb.jpg"
+  }
+]

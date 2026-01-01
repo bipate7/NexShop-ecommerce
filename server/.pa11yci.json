@@ -1,0 +1,13 @@
+{
+  "defaults": {
+    "timeout": 30000,
+    "wait": 1000,
+    "standard": "WCAG2AA"
+  },
+  "urls": [
+    "http://localhost:3000/",
+    "http://localhost:3000/Products.html",
+    "http://localhost:3000/Deals.html",
+    "http://localhost:3000/index.html"
+  ]
+}
